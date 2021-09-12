@@ -2,7 +2,7 @@ use std::fs;
 use regex::Regex;
 
 // Struct that represents a row, more information will be added in later updates
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Row {
     pub string: String
 }
@@ -15,7 +15,7 @@ impl Row {
     }
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Doc {
     pub rows: Vec<Row>,
     pub path: String,
